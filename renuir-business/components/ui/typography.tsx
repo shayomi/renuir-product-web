@@ -7,7 +7,7 @@ const typographyVariants = cva("text-foreground", {
   variants: {
     variant: {
       h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-[3.7rem]",
-      bigletter:
+      extraLargeText:
         "scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-[5.7rem]",
       h2: "scroll-m-20 pb-2 text-3xl lg:text-4xl font-semibold tracking-tight first:mt-0",
       h3: "scroll-m-20 text-xl lg:text-2xl font-semibold tracking-tight",
@@ -38,7 +38,7 @@ const variantElementMap: Record<
   string
 > = {
   h1: "h1",
-  bigletter: "bigletter",
+  extraLargeText: "extraLargeText",
   h2: "h2",
   h3: "h3",
   h4: "h4",

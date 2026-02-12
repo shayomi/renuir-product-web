@@ -26,7 +26,7 @@ export function TrustFeatures() {
   ];
 
   return (
-    <section className="py-36 bg-background">
+    <section className="py-36 bg-[#3F7F8FC]">
       <div className="app-container">
         <div className="flex flex-col md:flex-row gap-4 items-start justify-between">
           <div className="max-w-lg mx-auto items-start">

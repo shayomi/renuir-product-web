@@ -15,7 +15,7 @@ export function AboutHero() {
 
       <div className="relative app-container py-40 flex flex-col items-center text-center">
         <Typography
-          variant="bigletter"
+          variant="extraLargeText"
           className="mt-8 text-[204px] text-black font-normal"
         >
           We&apos;re here to help

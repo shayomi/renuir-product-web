@@ -20,14 +20,14 @@ export function HomeHero() {
 
       <div className="relative app-container py-40 flex flex-col text-center">
         <Typography
-          variant="bigletter"
+          variant="extraLargeText"
           className="mt-8 text-[204px] text-white/80 font-normal"
         >
           Lost &amp; Found,
         </Typography>
 
         <Typography
-          variant="bigletter"
+          variant="extraLargeText"
           className="tracking-tightest text-white"
         >
           Reimagined.

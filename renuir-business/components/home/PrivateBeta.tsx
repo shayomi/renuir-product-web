@@ -6,7 +6,7 @@ import { features } from "../data/homefeatures";
 const PrivateBeta = () => {
   return (
     <section className="bg-[#020617]">
-      <div className="relative app-container grid gap-16 py-28 lg:grid-cols-2">
+      <div className="relative app-container grid gap-16 py-48 lg:grid-cols-2">
         <div className="max-w-xl">
           <span className="inline-flex rounded-full bg-amber-400/20 px-4 py-1 text-sm font-medium text-amber-300">
             Private beta
