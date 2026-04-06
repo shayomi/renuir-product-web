@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
+import AnimateIn from "@/components/ui/AnimateIn";
 
 const features = [
   "Local visibility when it matters",
@@ -12,7 +13,8 @@ const features = [
 const ForIndividual = () => {
   return (
     <section className="app-container grid items-center gap-16 py-24 lg:grid-cols-2">
-      <div>
+      <AnimateIn>
+        <div>
         <span className="inline-flex items-center rounded-full border px-4 py-1 text-xs font-medium text-muted-foreground">
           FOR INDIVIDUALS
         </span>
@@ -71,18 +73,21 @@ const ForIndividual = () => {
             Apple Store
           </Button>
         </div>
-      </div>
+        </div>
+      </AnimateIn>
 
-      <div className="relative mx-auto w-full max-w-md">
-        <Image
-          src="/images/home/individual.png"
-          alt="Renuir mobile app"
-          width={620}
-          height={860}
-          priority
-          className="mx-auto"
-        />
-      </div>
+      <AnimateIn delay={0.1}>
+        <div className="relative mx-auto w-full max-w-md">
+          <Image
+            src="/images/home/individual.png"
+            alt="Renuir mobile app"
+            width={620}
+            height={860}
+            priority
+            className="mx-auto"
+          />
+        </div>
+      </AnimateIn>
     </section>
   );
 };

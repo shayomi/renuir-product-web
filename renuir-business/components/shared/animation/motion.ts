@@ -1,5 +1,7 @@
 import { Variants } from "framer-motion";
 
+type AnimationType = "spring" | "tween" | "inertia";
+
 export const navVariants: Variants = {
   hidden: {
     opacity: 0,
@@ -23,7 +25,7 @@ export const navVariants: Variants = {
 
 export const slideIn = (
   direction: "left" | "right" | "up" | "down",
-  type: string,
+  type: AnimationType,
   delay: number,
   duration: number
 ): Variants => ({
@@ -99,7 +101,7 @@ export const textVariant2: Variants = {
 
 export const fadeIn = (
   direction: "left" | "right" | "up" | "down",
-  type: string,
+  type: AnimationType,
   delay: number,
   duration: number
 ): Variants => ({

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Typography } from "@/components/ui/typography";
+import AnimateIn from "@/components/ui/AnimateIn";
 
 import { Badge } from "../ui/badge";
 
@@ -7,47 +8,55 @@ export function HowItWorks() {
   return (
     <section className="relative  py-28">
       <div className="app-container text-center">
-        <div className="mb-6 flex justify-center">
-          <Badge
-            variant="secondary"
-            className="rounded-full px-4 py-1 text-primary"
+        <AnimateIn>
+          <div className="mb-6 flex justify-center">
+            <Badge
+              variant="secondary"
+              className="rounded-full px-4 py-1 text-primary"
+            >
+              Process
+            </Badge>
+          </div>
+
+          <Typography variant="h2" className="text-gray-800">
+            How Renuir works
+          </Typography>
+
+          <Typography
+            variant="mutedText"
+            className="mx-auto mt-4 max-w-lg text-gray-800"
           >
-            Process
-          </Badge>
-        </div>
-
-        <Typography variant="h2" className="text-gray-800">
-          How Renuir works
-        </Typography>
-
-        <Typography
-          variant="mutedText"
-          className="mx-auto mt-4 max-w-lg text-gray-800"
-        >
-          One system for lost items across people and places. It works quietly
-          in the background.
-        </Typography>
+            One system for lost items across people and places. It works quietly
+            in the background.
+          </Typography>
+        </AnimateIn>
 
         <div className="relative mt-20 grid grid-cols-1 gap-16 md:grid-cols-3">
           <div className="absolute left-1/2 top-6 hidden h-px w-[70%] -translate-x-1/2 bg-gray-200 md:block" />
 
-          <Step
-            iconSrc="/images/icons/fileicon.svg"
-            title="Items are posted"
-            description="Lost or found items are logged by individuals or by venues using AI intake."
-          />
+          <AnimateIn delay={0.04}>
+            <Step
+              iconSrc="/images/icons/fileicon.svg"
+              title="Items are posted"
+              description="Lost or found items are logged by individuals or by venues using AI intake."
+            />
+          </AnimateIn>
 
-          <Step
-            iconSrc="/images/icons/checkicon.svg"
-            title="Responsible matching"
-            description="Our engine matches details, location, and time. Ownership is verified without assumptions."
-          />
+          <AnimateIn delay={0.1}>
+            <Step
+              iconSrc="/images/icons/checkicon.svg"
+              title="Responsible matching"
+              description="Our engine matches details, location, and time. Ownership is verified without assumptions."
+            />
+          </AnimateIn>
 
-          <Step
-            iconSrc="/images/icons/refreshicon.svg"
-            title="Safe return"
-            description="People connect through guided chat to arrange a secure delivery."
-          />
+          <AnimateIn delay={0.16}>
+            <Step
+              iconSrc="/images/icons/refreshicon.svg"
+              title="Safe return"
+              description="People connect through guided chat to arrange a secure delivery."
+            />
+          </AnimateIn>
         </div>
       </div>
     </section>

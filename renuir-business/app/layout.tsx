@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/shared/footer/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import PageTransition from "@/components/shared/animation/PageTransition";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://renuir.com"),
@@ -69,11 +59,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased bg-transparent">
         {/* <Nav /> */}
-        {children}
+        <PageTransition>{children}</PageTransition>
         <Footer />
       </body>
     </html>

@@ -1,13 +1,15 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
+import AnimateIn from "@/components/ui/AnimateIn";
 import { Badge } from "../ui/badge";
 
 const DeveloperPlatform = () => {
   return (
     <section className="bg-white">
       <div className="app-container grid items-center gap-16 py-28 lg:grid-cols-2">
-        <div className="max-w-xl">
+        <AnimateIn>
+          <div className="max-w-xl">
           <Badge variant="default"> &gt;_ Developer platform</Badge>
 
           <Typography variant="h1" className="mt-6">
@@ -66,18 +68,21 @@ const DeveloperPlatform = () => {
           >
             Explore Renuir API
           </Button>
-        </div>
+          </div>
+        </AnimateIn>
 
-        <div className="relative">
-          <Image
-            src="/images/home/developer.png"
-            alt="Renuir Developer Platform"
-            width={720}
-            height={520}
-            priority
-            className="rounded-2xl"
-          />
-        </div>
+        <AnimateIn delay={0.1}>
+          <div className="relative">
+            <Image
+              src="/images/home/developer.png"
+              alt="Renuir Developer Platform"
+              width={720}
+              height={520}
+              priority
+              className="rounded-2xl"
+            />
+          </div>
+        </AnimateIn>
       </div>
     </section>
   );

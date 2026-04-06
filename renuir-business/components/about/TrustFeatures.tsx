@@ -1,4 +1,5 @@
 import { Typography } from "../ui/typography";
+import AnimateIn from "@/components/ui/AnimateIn";
 import { TrustFeature } from "./TrustFeature";
 
 export function TrustFeatures() {
@@ -29,18 +30,22 @@ export function TrustFeatures() {
     <section className="py-36 bg-[#3F7F8FC]">
       <div className="app-container">
         <div className="flex flex-col md:flex-row gap-4 items-start justify-between">
-          <div className="max-w-lg mx-auto items-start">
-            <Typography variant="h1" className="mb-4">
-              Built with trust at the core
-            </Typography>
-            <Typography variant="lead">
-              Renuir replaces the chaos of lost-and-found with a verifiable,
-              secure system.
-            </Typography>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <AnimateIn>
+            <div className="max-w-lg mx-auto items-start">
+              <Typography variant="h1" className="mb-4">
+                Built with trust at the core
+              </Typography>
+              <Typography variant="lead">
+                Renuir replaces the chaos of lost-and-found with a verifiable,
+                secure system.
+              </Typography>
+            </div>
+          </AnimateIn>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {features.map((feature, index) => (
-              <TrustFeature key={index} {...feature} />
+              <AnimateIn key={feature.title} delay={index * 0.04}>
+                <TrustFeature {...feature} />
+              </AnimateIn>
             ))}
           </div>
         </div>

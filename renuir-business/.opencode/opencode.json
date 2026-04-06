@@ -1,0 +1,26 @@
+{
+  "rules": ".opencode/rules.md",
+  "context": [
+    ".legion/context/README.md",
+    ".legion/context/goals.md",
+    ".legion/context/priorities.md",
+    ".legion/context/projects.md",
+    ".legion/context/decisions.md",
+    ".legion/context/partners.md",
+    ".legion/context/constraints.md",
+    ".legion/context/blockers.md",
+    ".legion/context/delegation.md",
+    ".legion/context/technical-debt.md"
+  ],
+  "skills": [
+    ".legion/context/skills/component-creation.md",
+    ".legion/context/skills/api-endpoint.md",
+    ".legion/context/skills/business-integration.md",
+    ".legion/context/skills/copywriting.md",
+    ".legion/context/skills/code-review.md",
+    ".legion/context/skills/debugging.md",
+    ".legion/context/skills/create-spec.md",
+    ".legion/context/skills/browser-qa.md",
+    ".legion/skills/create-spec/SKILL.md"
+  ]
+}

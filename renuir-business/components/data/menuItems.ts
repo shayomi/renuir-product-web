@@ -1,19 +1,13 @@
-// utils/data/menuItems.ts
 export const menuItems = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About us",
-    href: "/about-us",
-  },
+  { name: "Home", href: "/" },
+  { name: "About us", href: "/about-us" },
   {
     name: "Solutions",
-    href: "/#about",
+    href: "/solutions", // optional (used if you want click-through too)
+    children: [
+      { name: "Enterprise", href: "/solutions" },
+      { name: "Individual", href: "/individual" },
+    ],
   },
-  {
-    name: "Developers",
-    href: "/#about",
-  },
+  { name: "Developers", href: "/developer" },
 ];

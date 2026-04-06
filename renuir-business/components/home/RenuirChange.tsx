@@ -1,11 +1,12 @@
 import React from "react";
 import { Typography } from "../ui/typography";
+import AnimateIn from "@/components/ui/AnimateIn";
 
 const RenuirChange = () => {
   return (
     <section className="bg-[#f0f6fc]">
       <div className="app-container py-32">
-        <div className="flex flex-col gap-4 items-center">
+        <AnimateIn className="flex flex-col gap-4 items-center">
           <Typography variant="h2" className="text-center">
             That moment when you reach for your pocket...
             <br />
@@ -27,7 +28,7 @@ const RenuirChange = () => {
           <Typography variant="h4" className=" text-primary font-bold">
             RENUIR IS HERE TO CHANGE THAT.
           </Typography>
-        </div>
+        </AnimateIn>
       </div>
     </section>
   );
